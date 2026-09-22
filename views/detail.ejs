@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= event.title %></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="container">
+    <a href="/" class="back-link">&larr; Back to all events</a>
+
+    <article class="event-detail">
+      <img src="<%= event.image %>" alt="<%= event.title %>" class="event-detail-image">
+
+      <div class="event-detail-body">
+        <h1><%= event.title %></h1>
+
+        <div class="event-detail-meta">
+          <p><strong>Date:</strong> <%= event.date %></p>
+          <p><strong>Time:</strong> <%= event.time %></p>
+          <p><strong>Location:</strong> <%= event.location %></p>
+        </div>
+
+        <hr>
+
+        <p class="event-detail-description"><%= event.description %></p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

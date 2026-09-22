@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Community Events Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Upcoming Community Events</h1>
+      <p>Browse what's happening near you and click a card for details.</p>
+    </header>
+
+    <div class="event-grid">
+      <% events.forEach(event => { %>
+        <a href="/events/<%= event.slug %>" class="event-card-link">
+          <article class="event-card">
+            <img src="<%= event.image %>" alt="<%= event.title %>">
+            <div class="event-card-body">
+              <h3><%= event.title %></h3>
+              <p class="event-meta"><%= event.date %></p>
+              <p class="event-meta"><%= event.location %></p>
+            </div>
+          </article>
+        </a>
+      <% }) %>
+    </div>
+  </main>
+</body>
+</html>
