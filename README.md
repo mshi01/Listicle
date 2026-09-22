@@ -4,7 +4,7 @@ Submitted by: **Mingzhu Shi**
 
 About this web app: **Displays a list of upcoming community events, showing each event's title, time, and location. Renders a 404 page when no matching event or route is found.**
 
-Time spent: **8** hours
+Time spent: **7** hours
 
 ## Required Features
 
@@ -24,13 +24,7 @@ The following **optional** features are implemented:
 
 - [x] The web app displays items in a unique format, such as cards rather than lists or animated list items
 
-The following **additional** features are implemented:
-
-- [ ] List anything else that you added to improve the site's functionality!
-
 ## Video Walkthrough
-
-**Note: please be sure to 
 
 Here's a walkthrough of implemented required features:
 
